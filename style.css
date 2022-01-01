@@ -50,6 +50,7 @@ html{
     justify-content: stretch;
 }
 .calc__btn{
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,11 +60,23 @@ html{
     width: 23%;
     height: 80px;
     border: 1px solid black;
-    background-color: rgb(199, 96, 0);
+    background-color: rgb(139, 141, 0);
     margin: 2px;
     transition: all .2s ease;
 }
 .calc__btn:hover{
-    background-color: rgb(177, 85, 0);
-    
+    background-color: rgb(143, 153, 0);  
+}
+
+div[class^='number'], div[class*=' number']{
+    background-color: rgb(158, 185, 0);
+    transition: all .2s ease;
+}
+div[class^='number'], div[class*=' number']:hover{
+    background-color: rgb(113, 133, 0);
+}
+
+.calc-clear,
+.calc-delete{
+    flex: 0 1 48.5%;
 }
